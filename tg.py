@@ -1,14 +1,8 @@
-import aiogram.utils.markdown as md
-from aiogram import Bot, Dispatcher, types
+from aiogram import Bot, Dispatcher
 from aiogram.contrib.fsm_storage.memory import MemoryStorage
-from aiogram.dispatcher import FSMContext
-from aiogram.dispatcher.filters import Text
 from aiogram.dispatcher.filters.state import State, StatesGroup
-from aiogram.types import ParseMode
 from aiogram import executor
-from aiogram.types import KeyboardButton, ReplyKeyboardMarkup, \
-    InlineKeyboardMarkup, ReplyKeyboardRemove, InlineKeyboardButton
-from aiogram.utils.exceptions import BadRequest
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import json
 
 from main import set_access, table, link_for_table, change
